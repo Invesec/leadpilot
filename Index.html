@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LeadPilot AI – Marketing &amp; Follow-Up Systems for Real Estate Agents</title>
+<style>
+:root{--bg:#f7f9fc;--surf:#fff;--ink:#0f1b2d;--mut:#55627a;--line:#e1e7f0;--acc:#1f6feb;--acc2:#0ea5a4;--accink:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--surf:#131c2e;--ink:#eaf0fb;--mut:#9aa8c1;--line:#25314a;--acc:#4c8dff;--acc2:#2dd4bf;--accink:#06101f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1220;--surf:#131c2e;--ink:#eaf0fb;--mut:#9aa8c1;--line:#25314a;--acc:#4c8dff;--acc2:#2dd4bf;--accink:#06101f;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:19px;text-decoration:none;letter-spacing:-.3px}.logo span{color:var(--acc)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}nav ul a{text-decoration:none;color:var(--mut);font-size:14px}
+.btn{display:inline-block;background:var(--acc);color:var(--accink);padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:0;font-size:15px}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.sm{padding:8px 16px;font-size:14px}
+@media(max-width:700px){nav ul{display:none}}
+.hero{padding:72px 0 56px;text-align:center}
+.tag{display:inline-block;font-size:13px;color:var(--acc2);border:1px solid var(--line);padding:4px 12px;border-radius:99px;margin-bottom:18px;background:var(--surf)}
+h1{font-size:clamp(32px,6vw,54px);line-height:1.1;margin:0 0 16px;letter-spacing:-1.2px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:620px;margin:0 auto 26px;color:var(--mut);font-size:18px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:56px 0}h2{font-size:clamp(26px,4vw,36px);margin:0 0 10px;letter-spacing:-.6px}
+.sub{color:var(--mut);margin:0 0 30px;max-width:620px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--mut);font-size:15px}
+.ico{font-size:26px;margin-bottom:10px}
+.demo{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.chat{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:88%;padding:10px 14px;border-radius:14px;font-size:14.5px;background:var(--bg);border:1px solid var(--line)}
+.msg.me{align-self:flex-end;background:var(--acc);color:var(--accink);border-color:transparent}
+.note{font-size:12.5px;color:var(--mut)}
+.price{font-size:42px;font-weight:800;letter-spacing:-1px;margin:6px 0}.price small{font-size:14px;color:var(--mut);font-weight:500}
+.plan ul{list-style:none;padding:0;margin:14px 0 20px}.plan li{padding:6px 0 6px 26px;position:relative;font-size:15px;border-bottom:1px dashed var(--line)}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--acc2);font-weight:800}
+.plan .btn{width:100%;text-align:center}.plan.pop{border:2px solid var(--acc);position:relative}
+.badge{position:absolute;top:-13px;left:24px;background:var(--acc);color:var(--accink);font-size:12px;font-weight:700;padding:3px 12px;border-radius:99px}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.step{counter-increment:s}.step::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--acc);color:var(--accink);font-weight:800;margin-bottom:10px}
+.step h3{margin:0 0 4px;font-size:16px}.step p{margin:0;color:var(--mut);font-size:14px}
+details{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:var(--mut);font-size:15px}
+.final{text-align:center;background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:44px 20px}
+footer{padding:30px 0 40px;text-align:center;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--acc)}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top">Lead<span>Pilot</span> AI</a>
+<ul><li><a href="#solutions">Solutions</a></li><li><a href="#sample">Sample</a></li><li><a href="#packages">Packages</a></li><li><a href="#how">How it works</a></li><li><a href="#faq">FAQ</a></li></ul>
+<a class="btn sm" href="#packages">Get started</a>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<span class="tag">AI-powered marketing for real estate</span>
+<h1>Turn more property enquiries into <em>real business</em></h1>
+<p>LeadPilot AI prepares your social posts, property adverts, video scripts and WhatsApp follow-up system, so you spend less time on marketing and more time with clients.</p>
+<div class="cta"><a class="btn" href="#packages">See packages</a><a class="btn alt" href="https://wa.me/2347062668393">Chat on WhatsApp</a></div>
+</div>
+
+<section id="solutions"><div class="wrap">
+<h2>Everything between “enquiry” and “closed deal”</h2>
+<p class="sub">Done-for-you materials, written for your business, your market and your customers.</p>
+<div class="grid">
+<div class="card"><div class="ico">📣</div><h3>Marketing content</h3><p>Social media posts and property advert drafts that present your listings clearly and consistently.</p></div>
+<div class="card"><div class="ico">🎬</div><h3>Video scripts</h3><p>Ready-to-record scripts for property tours, market tips and agent introductions.</p></div>
+<div class="card"><div class="ico">💬</div><h3>Response templates</h3><p>Quick, professional replies for common questions on price, viewings, location and payment.</p></div>
+<div class="card"><div class="ico">🔁</div><h3>Follow-up sequences</h3><p>WhatsApp follow-up flows so no enquiry goes cold after the first message.</p></div>
+<div class="card"><div class="ico">🎯</div><h3>Lead qualification</h3><p>A simple system to separate serious buyers from casual browsers (Premium).</p></div>
+<div class="card"><div class="ico">📋</div><h3>Lead tracking</h3><p>A tracking template to see who enquired, who replied and who is ready to view.</p></div>
+</div></div></section>
+
+<section id="sample"><div class="wrap demo">
+<div><h2>See the kind of follow-up we build</h2><p class="sub">An illustrative example of a WhatsApp follow-up sequence. Yours is customised to your listings, tone and customers.</p><a class="btn alt" href="https://wa.me/2347062668393?text=Hello%2C%20I%27d%20like%20to%20see%20a%20sample%20from%20LeadPilot%20AI">Request a sample for your business</a></div>
+<div class="chat">
+<div class="msg">Hi, is the 3-bedroom still available?</div>
+<div class="msg me">Hello! Yes, it is. Would you like the price, photos and location details?</div>
+<div class="msg">Yes please.</div>
+<div class="msg me">Sent! I can arrange a viewing this week. Which day suits you best?</div>
+<div class="note">Illustrative example only.</div>
+</div></div></section>
+
+<section id="packages"><div class="wrap">
+<h2>Choose your growth package</h2>
+<p class="sub">Simple one-time packages. Pick the level that matches your business.</p>
+<div class="grid">
+<div class="card plan"><h3>Starter</h3><div class="price">$49</div><p>For agents starting with AI-powered marketing.</p>
+<ul><li>5 social media posts</li><li>3 property advert drafts</li><li>5 customer response templates</li><li>Basic marketing recommendations</li></ul>
+<a class="btn alt" href="https://docs.google.com/forms/d/e/1FAIpQLSdAPgKwtt7hzdblTKuhCZgStuzQNXgoX582LIoEw0qemDGFZA/viewform">Order Starter</a></div>
+<div class="card plan pop"><span class="badge">Most popular</span><h3>Professional</h3><div class="price">$149</div><p>For agents ready to improve their marketing system.</p>
+<ul><li>15 social media posts</li><li>5 property advert drafts</li><li>3 video scripts</li><li>10 customer response templates</li><li>WhatsApp follow-up sequence</li><li>30-day marketing plan</li><li>Lead-tracking template</li></ul>
+<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdAPgKwtt7hzdblTKuhCZgStuzQNXgoX582LIoEw0qemDGFZA/viewform">Order Professional</a></div>
+<div class="card plan"><h3>Premium</h3><div class="price">$249</div><p>For businesses wanting a more complete system.</p>
+<ul><li>30 social media posts</li><li>10 property advert drafts</li><li>5 video scripts</li><li>20 customer response templates</li><li>Customer qualification system</li><li>30-day marketing strategy</li><li>Lead-tracking template</li><li>Priority delivery</li></ul>
+<a class="btn alt" href="https://docs.google.com/forms/d/e/1FAIpQLSdAPgKwtt7hzdblTKuhCZgStuzQNXgoX582LIoEw0qemDGFZA/viewform">Order Premium</a></div>
+</div></div></section>
+
+<section id="how"><div class="wrap">
+<h2>How it works</h2><p class="sub">Five simple steps from order to results.</p>
+<div class="steps">
+<div class="step"><h3>Choose a package</h3><p>Pick the one that fits your business.</p></div>
+<div class="step"><h3>Submit your details</h3><p>Tell us about your business, customers and goals.</p></div>
+<div class="step"><h3>AI-powered preparation</h3><p>We prepare your content, templates and strategy.</p></div>
+<div class="step"><h3>Receive deliverables</h3><p>Everything is delivered digitally.</p></div>
+<div class="step"><h3>Put it to work</h3><p>Use your system to manage and convert enquiries.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Questions</h2><p class="sub">Quick answers. Anything else, message us.</p>
+<details><summary>Who is LeadPilot AI for?</summary><p>Real estate agents, property managers and property businesses that want consistent marketing and a reliable way to follow up on enquiries.</p></details>
+<details><summary>What do I need to provide?</summary><p>A short form about your business, the types of property you sell, your target customers and your marketing goals.</p></details>
+<details><summary>How will I receive my materials?</summary><p>Digitally. Your content and templates are ready to copy, post and use right away.</p></details>
+<details><summary>How long does delivery take, and can I request changes?</summary><p>Message us on WhatsApp with your package and we will confirm the timeline and revision options before you commit. Premium orders receive priority delivery.</p></details>
+<details><summary>Do you post for me or manage my accounts?</summary><p>No. LeadPilot AI delivers ready-to-use materials and systems. You stay in control of your accounts and your customers.</p></details>
+</div></section>
+
+<section><div class="wrap"><div class="final">
+<h2>Ready to organise your enquiries and grow?</h2>
+<p class="sub" style="margin:0 auto 22px">Start with a package, or ask us anything first.</p>
+<div class="cta"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdAPgKwtt7hzdblTKuhCZgStuzQNXgoX582LIoEw0qemDGFZA/viewform">Start your growth journey</a><a class="btn alt" href="https://wa.me/2347062668393">WhatsApp us</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+<strong>LeadPilot AI</strong> · Your business. Our AI-powered system. Better organisation.<br>
+WhatsApp <a href="https://wa.me/2347062668393">+234 706 266 8393</a> · <a href="mailto:Learnstation001@gmail.com">Learnstation001@gmail.com</a>
+</div></footer>
+</body>
+  </html>
